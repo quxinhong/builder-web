@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      .x .t{
+        height: 50%;
+      }
+      .x .b{
+        height: 50%;
+      }
+      .x .b .oper{
+        background-color: #505050;
+        display: flex;
+        justify-content: space-between;
+        height: 26px;
+        overflow: auto
+      }
+      .x .b .oper .el-button{
+        border: none;
+      }
+      .x .b .oper .el-input.el-input--mini .el-input__inner{
+        height: 26px;
+        line-height: 26px;
+      }
+      .x .b .bb{
+        height: calc(100% - 26px);
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
